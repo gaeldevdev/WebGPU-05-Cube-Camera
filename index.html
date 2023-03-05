@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/g-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebGPU Camera Control</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div>  
+      <h1>Camera Control</h1>
+      <br>
+      <canvas id="canvas-webgpu" width="480" height="480"></canvas>
+    </div>
+    <script>
+      if (global === undefined) {
+        var global = window;
+      }
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
